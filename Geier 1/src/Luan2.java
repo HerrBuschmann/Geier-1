@@ -67,10 +67,12 @@ public class Luan2 extends HolsDerGeierSpieler {
         // Falls der Gegner wahrscheinlich seine höchste Karte spielt, spiele die gleiche/höhere Karte
         if (myCards.size() > 1 && naechsteKarte + stackedPoints >= winnable.get(0) && myCards.get(1) >= enemyCards.get(0)) {
             ret = highestSameCard();
+            System.out.println("che 1");
         }
         // Falls der Bot Priorität hat und es die beste Punktekarte ist, spiele die besten Karte
         else if (naechsteKarte + stackedPoints >= winnable.get(0) && higherCards() && havePrio()) {
             ret = highestSameCard();
+            System.out.println("che 2");
         }
         // Falls das Spielen der besten Karte notwendig ist, um nicht zu verlieren
         else if (!isGameWinnable(naechsteKarte + stackedPoints)) {
