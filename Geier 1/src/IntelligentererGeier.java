@@ -2,7 +2,7 @@ import java.util.ArrayList;
 /**
  * Beschreiben Sie hier die Klasse IntelligentererGeier.
  * 
- * @author (Ihr Name) 
+ * @author Luan Islami
  * @version (eine Versionsnummer oder ein Datum)
  */
 public class IntelligentererGeier extends HolsDerGeierSpieler {
@@ -36,6 +36,8 @@ public class IntelligentererGeier extends HolsDerGeierSpieler {
        // Lösche dieser Karte
        nochZuGewinnen.remove(nochZuGewinnen.indexOf(naechsteKarte));
        // Wenn die karte negativ ist  => spiele die letzte Karte
+
+
        if (naechsteKarte>0) {           
            // Kommt die hoechste Karte und der gener hat die gleiche höchste => spiele mittlere Karte
            if ((nochZuGewinnen.indexOf(naechsteKarte)==0)&&(vomGegnerNochNichtGelegt.get(0)==nochNichtGespielt.get(0))) {
